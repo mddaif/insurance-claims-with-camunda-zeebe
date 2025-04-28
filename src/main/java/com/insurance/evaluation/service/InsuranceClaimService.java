@@ -10,20 +10,10 @@ import java.util.Map;
 
 @Service
 @Slf4j
-public class InsuranceClaimService implements CommandLineRunner {
+public class InsuranceClaimService {
 
     @Autowired
     private ZeebeClient zeebeClient;
 
-    @Override
-    public void run(final String... args) {
-        var bpmnProcessId = "insurance-claim-evaluation";
-        var event = zeebeClient.newCreateInstanceCommand()
-                .bpmnProcessId(bpmnProcessId)
-                .latestVersion()
-                .variables(Map.of("severity", "high"))
-                .send()
-                .join();
-        log.info("started a process instance: {}", event.getProcessInstanceKey());
-    }
+
 }
