@@ -56,3 +56,9 @@ Example process start variables:
 {
   "severity": "high"
 }
+```
+
+
+## BPMN Diagram
+
+![Insurance Claim Evaluation Process](docs/bpmn-diagram.png)
