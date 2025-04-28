@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0o10azw" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.34.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
-  <bpmn:process id="Process_0497llb" isExecutable="true">
+  <bpmn:process id="insurance-claim-evaluation" isExecutable="true">
     <bpmn:startEvent id="StartEvent_1" name="Claim received">
       <bpmn:outgoing>Flow_0x2rrtf</bpmn:outgoing>
     </bpmn:startEvent>
@@ -34,7 +34,7 @@
     <bpmn:sequenceFlow id="Flow_0lxlwka" sourceRef="Activity_1bv58ao" targetRef="Event_0rqd2s6" />
   </bpmn:process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_1">
-    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0497llb">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="insurance-claim-evaluation">
       <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
         <dc:Bounds x="182" y="82" width="36" height="36" />
         <bpmndi:BPMNLabel>
